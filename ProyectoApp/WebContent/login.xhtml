@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+	<h:outputStylesheet library="css" name="normalize.css"/>
+	<h:outputStylesheet library="css" name="materialize.min.css"/>
+	<h:outputStylesheet library="css" name="material-design-iconic-font.min.css"/>
+	<h:outputStylesheet library="css" name="jquery.mCustomScrollbar.css"/>
+	<h:outputStylesheet library="css" name="sweetalert.css"/>
+	<h:outputStylesheet library="css" name="style.css"/>
+	
+	<h:outputScript library="js" name="sweetalert.min.js"/>
+	<h:outputScript name="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"/>
+	<!--<h:outputScript>window.jQuery || document.write('<h:outputScript name="js/jquery-2.2.0.min.js"/>')</h:outputScript>
+-->	<h:outputScript library="js" name="js/materialize.min.js"/>
+    
+	<h:outputScript library="js" name="jquery.mCustomScrollbar.concat.min.js"/>
+   
+	<h:outputScript library="js" name="main.js"/>
+	
+	
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>login App</title>
+</h:head>
+<h:body class="font-cover" id="login">
+    <div class="container-login center-align">
+        <div style="margin:15px 0;">
+            <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>
+            <p>Inicia sesicion con tu cuenta</p>   
+        </div>
+        <h:form action="">
+            <div class="input-field">
+                <input id="UserName" type="text" class="validate"/>
+                <label for="UserName"><i class="zmdi zmdi-account"></i>&nbsp; Nombre</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="Password" type="password" class="validate"/>
+                <label for="Password"><i class="zmdi zmdi-lock"></i>&nbsp; Contraseña</label>
+            </div>
+           <!--  
+            <button class="waves-effect waves-teal btn-flat" href="index.xhtml">Ingresar &nbsp; <i class="zmdi zmdi-mail-send"></i></button>
+            -->
+            <h:commandButton  value="Ingresar &nbsp; " action="#{managerData.login}" class="waves-effect waves-teal btn-flat"/>
+            
+        </h:form>
+        <div class="divider" style="margin: 20px 0;"></div>
+        <a href="form.xhtml">Crear cuenta</a><br/>
+    
+        <a href="Recuperar.xhtml">Olvidaste tu Contraseña?</a>
+    </div>	
+</h:body>
+</html>

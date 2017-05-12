@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>INFORMATE DE COMIDA</title>    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <h:outputStylesheet library="css" name="estilos.css"/>
+    <h:outputStylesheet libraru="css" name="font.css"/>
+    </h:head>
+    <h:body>
+    <h:header class="header">
+      <div class="contenedor">
+        <h1 class="logo">COCINA FACIL</h1>
+        <span class="icon-menu" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link select">Inicio</a></li>
+            <li class="menu__item"><a href="Selva.html" class="menu__link">Selva</a></li>
+            <li class="menu__item"><a href="Costa.html" class="menu__link">Costa</a></li>
+            <li class="menu__item"><a href="Sierra.html" class="menu__link">Sierra</a></li>
+              <li class="menu__item"><a href="login.html" class="menu__link">login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </h:header>
+    <div class="banner">
+     <h:grahicImage value="img/Sierra.jpg" alt=""/>
+      <div class="contenedor">
+        <h2 class="banner__titulo">CONOCE MAS DE LA GASTRONOMIA ANDINA</h2>
+        <p class="banner__txt">Informate con nosotros sobre tus comidas faboritas</p>
+      </div>
+    </div>
+    <main class="main">
+      <div class="contenedor">
+        <ui:composition class="info">
+          <article class="info__columna">
+            <h:graficImage value="img/Region-Sierra.jpg" alt="" class="info__img"/>
+            <h2 class="info__titulo">Sierra Peruana</h2>
+            <p class="info__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut, incidunt aperiam dicta totam cumque.</p>
+          </article>
+          <article class="info__columna">
+            <h:graficImage value="img/Region-Costa.jpg" alt="" class="info__img"/>
+            <h2 class="info__titulo">Costa Peruana</h2>
+            <p class="info__txt">Expedita totam, minima praesentium suscipit excepturi ducimus repellat harum ab, inventore neque cum! Nostrum, dicta!</p>
+          </article>
+          <article class="info__columna">
+            <h:graficImage value="img/Region-Selva.jpg" alt="" class="info__img"/>
+            <h2 class="info__titulo">Selva Peruana</h2>
+            <p class="info__txt">Molestiae odit quas officia, dicta, nobis dolorem, quaerat eveniet accusantium excepturi est quidem, ducimus doloremque?</p>
+          </article>
+        </ui:composition>
+        <ui:composition class="cursos">
+          <h2 class="section__titulo">Platos Tipicos de la Zona</h2>
+          <div class="cursos__columna">
+            <h:graficImage value="img/imgSierra/Pachamanca.jpg" alt="" class="cursos__img"/>
+            <div class="cursos__descripcion">
+              <h2 class="cursos__titulo">PACHAMANCA</h2>
+              <div class="cursos__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, dignissimos.</div>
+            </div>
+          </div>
+          <div class="cursos__columna">
+            <h:graficImage value="img/imgSierra/Patasca.jpg" alt="" class="cursos__img"/>
+            <div class="cursos__descripcion">
+              <h2 class="cursos__titulo">PATASCA</h2>
+              <div class="cursos__txt">Accusantium rem quia doloribus soluta ullam pariatur alias, quas dolorum.</div>
+            </div>
+          </div>
+          <div class="cursos__columna">
+            <h:graficImage value="img/imgSierra/Papa-Huancaina.jpg" alt="" class="cursos__img"/>
+            <div class="cursos__descripcion">
+              <h2 class="cursos__titulo">PAPA A LA HUANCAINA</h2>
+              <div class="cursos__txt"> DATO CURIOSO:
+                  El 21 de junio de 1879 durante la cena de Miguel Grau apararece este platillo por primera vez.</div>
+            </div>
+          </div>
+          <div class="cursos__columna">
+              <a href="index.html"> <h:graficImage value="img/imgSierra/CuyChactado.jpg" alt="" class="cursos__img"/></a>
+            <div class="cursos__descripcion">
+              <h2 class="cursos__titulo">CUY CHACTADO</h2>
+              <div class="cursos__txt">Nulla, cumque sunt laudantium blanditiis deserunt, error dolores vero iure.</div>
+            </div>
+          </div>
+        </ui:composition>
+        
+      </div>
+    </main>
+    <script src="js/menu.js"></script>
+  </h:body>
+</html>

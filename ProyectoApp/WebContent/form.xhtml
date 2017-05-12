@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Material Dark</title>
+
+    <h:outputStylesheet library="css" name="normalize.css"/>
+    <h:outputStylesheet library="css" name="materialize.min.css"/>
+    <h:outputStylesheet library="css" name="material-design-iconic-font.min.css"/>
+    <h:outputStylesheet library="css" name="jquery.mCustomScrollbar.css"/>
+    <h:outputStylesheet library="css" name="sweetalert.css"/>
+    <h:outputStylesheet library="css" name="style.css"/>
+</h:head>
+<h:body>
+  
+    <ui:composition class="NavLateral full-width">
+        <div class="NavLateral-FontMenu full-width ShowHideMenu"></div>
+        <div class="NavLateral-content full-width">
+            <h:header class="NavLateral-title full-width center-align">
+                APPCC<i class="zmdi zmdi-close NavLateral-title-btn ShowHideMenu"></i>
+            </h:header>
+            
+            <div class="NavLateral-Nav">
+                <ul class="full-width">
+                    <li>
+                        <a href="index.xhtml" class="waves-effect waves-light"><i class="zmdi zmdi-desktop-mac zmdi-hc-fw"></i> Pagina Principal</a>
+                        
+                    </li>       
+                </ul>
+            </div>  
+        </div>  
+    </ui:composition>
+
+    
+    <ui:composition class="ContentPage full-width"/>
+      
+        <div class="ContentPage-Nav full-width">
+            <ul class="full-width">
+                <li class="btn-MobileMenu ShowHideMenu"><a href="index.html" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Menu"><i class="zmdi zmdi-more-vert"></i></a></li>
+            </ul>   
+        </div>
+        
+      
+        <div class="container">
+            <div class="row">
+                <h2 class="center-align">REGISTRO</h2>
+                <h:form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <h:inputText  value="first_name" type="text" class="validate"/>
+                        <label for="first_name">NOMBRES</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <h:inputText value="last_name" type="text" class="validate"/>
+                        <label for="last_name">APELLIDOS</label>
+                    </div>
+                </div>
+                    <div class="row">
+                    <div class="input-field col s6">
+                        <h:inputText  value="password" type="password" class="validate"/>
+                        <label for="password">CONTRASEÑA</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <h:inputText value="password" type="password" class="validate"/>
+                        <label for="password">REPITA CONTRASEÑA</label>
+                    </div>
+                </div>
+             
+                <div class="row">
+                    <div class="input-field col s12">
+                        <h:inputText value="email" type="email" class="validate"/>
+                        <label for="email">EMAIL</label>
+                    </div>
+                </div>
+                     <div class="row">
+                        <div class="input-field col s6">
+                            <i class="zmdi zmdi-account-circle prefix"></i>
+                            <h:inputText value="icon_prefix" type="text" class="validate"/>
+                            <label for="icon_prefix">USER</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="zmdi zmdi-phone prefix"></i>
+                            <h:inputText value="icon_telephone" type="tel" class="validate"/>
+                            <label for="icon_telephone">TELEFONO</label>
+                        </div>
+                    </div>
+                     <button class="waves-effect waves-teal btn-flat" href="login.xhtml">ACEPTAR &nbsp; <i class="zmdi zmdi-mail-send"></i></button>
+                </h:form>
+            </div>
+        </div>
+        
+   
+    <script src="js/sweetalert.min.js"></script>
+    
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.2.0.min.js"><\/script>')</script>
+    
+    
+    <script src="js/materialize.min.js"></script>
+    
+    
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+
+    <script src="js/main.js"></script>
+</h:body>
+</html>
